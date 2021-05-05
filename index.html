@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebecca's Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;900&family=Source+Sans+Pro:wght@300;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- <div class="logo">
+            <img src="" alt="">
+        </div> -->
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"> <a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Rebecca Sousa</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front-End Dev</p>
+        <img src="assets/profile cartoon.png" alt="profile picture of Rebecca Sousa" class="intro__img">
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2 class="section__title section__title--proj">Projects</h2>
+        <p class="section__subtitle section__subtitle--proj">A selection of my personal projects</p>
+
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+            <div class="portfolio__item">
+                <img src="assets/azul thumbnail.jpg" alt="" class="portfolio__img">
+                <p class="portfolio__name">Azul</p>
+                <button class="portfolio__btn" id="Azul">View</button>
+            </div>
+
+            <!-- Portfolio item 02 -->            
+            <div class="portfolio__item">
+                <img src="assets/todo list thumbnail.jpg" alt="" class="portfolio__img">
+                <p class="portfolio__name">Todo</p>
+                <button class="portfolio__btn" id="Todo">View</button>
+            </div>
+        </div>
+
+        <div class="project-modal" id="project-modal">
+            <div class="project-modal-content">
+                <!-- carrossel imgs -->
+                <h3 class="modal__title"></h3>
+                <p class="modal__subtitle"></p>
+                <p class="modal__text"></p>
+                <button type="button" class="modal__btn-app">View site</button>
+                <button type="button" class="modal__btn-github">View repo</button>
+                <button type="button" class="modal__btn-close">X</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Lorem ipsum dolor sit amet</p>
+
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit libero ac rutrum consequat. Fusce imperdiet ligula vel nisi efficitur sagittis. Nunc neque purus, suscipit ac lectus in, sollicitudin luctus est. Aenean dignissim mauris in felis malesuada, et placerat dui ornare. Aliquam erat volutpat. Integer feugiat ut nisl a tincidunt. Proin sem orci, blandit sit amet dignissim vitae, faucibus ac velit. Nullam elementum diam ac turpis tristique tincidunt. Mauris nec pharetra dui, quis euismod metus. Praesent sodales vestibulum nisi, at ullamcorper magna scelerisque nec. Aliquam pellentesque viverra sapien in tempor.</p>
+        </div>
+
+        <img src="assets/profile picture.jpg" alt="profile picture of Rebecca Sousa" class="about-me__img">
+
+        <!-- talvez tenha q ser colocado dentro do about-me__body -->
+        <div class="about-me__skills">
+            <p></p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-form" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__subtitle"></p>
+
+        <form action="" method="GET">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/rebecca15sousa" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/rsousa10/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -104,6 +104,11 @@ h3 {
 
 /* header */
 
+.WIP {
+    width: 100%;
+    text-align: center;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -324,6 +329,9 @@ header {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
 }
 
 .portfolio__btn {
@@ -332,6 +340,14 @@ header {
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid var(--clr-light);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body);
+    color: var(--clr-light);
 }
 
 .portfolio__item:hover .portfolio__img, .portfolio__item:focus-within .portfolio__img {
